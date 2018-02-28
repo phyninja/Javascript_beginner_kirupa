@@ -8,6 +8,7 @@
   </head>
 
   <body>
+    <p></p>
     <script>
 /*     Variables
 
@@ -42,7 +43,7 @@
 
       // For loop
 
-      var count = 10;
+/*      var count = 10;
 
       function saySomething(){
         document.writeln('Hello! ');
@@ -50,7 +51,36 @@
 
       for (var i=0; i < count; i++){
         saySomething();
+      }*/
+
+      // Timers - setTimeout
+
+/*      function showAlert(){
+        alert("moo");
       }
+
+      var timeID = setTimeout(showAlert, 5000);*/
+
+      // setInterval
+
+/*      function drawSomething(){
+        document.querySelector("p").textContent += "#\n";
+      }
+
+      intervalID = setInterval(drawSomething, 1000/60);*/
+
+      var requestID;
+
+      function animationLoop(){
+        //do some animation
+        document.querySelector("p").textContent += "#\n";
+
+        requestID = requestAnimationFrame(animationLoop);
+      }
+
+      animationLoop();
+
+
 
 
 
