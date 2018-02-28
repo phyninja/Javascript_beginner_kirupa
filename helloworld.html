@@ -9,8 +9,12 @@
 
   <body>
     <script>
+/*      Variables
+
       var myText = "helloworld!";
-      alert(myText);
+      alert(myText);*/
+
+/*      Functions
 
       function showDistance(speed, time){
         alert("An object going " + speed + " m/s for " + time + " seconds, will travel " + speed*time + " meters.\n");
@@ -18,7 +22,25 @@
 
       showDistance(10, 5);
       showDistance(3, 4);
-      showDistance(5, 7.5);
+      showDistance(5, 7.5);*/
+
+//      Conditionals
+
+      var speedLimit = 50;
+
+      function amIspeeding(speed){
+        if (speed > speedLimit){
+          alert("Your speed is " + speed + ". You are speeding!");
+        }
+        else {
+          alert("Your speed is " + speed + ". You are not speeding.");
+        }
+      }
+
+      amIspeeding(54);
+      amIspeeding(32);
+
+
     </script>
   </body>
 
