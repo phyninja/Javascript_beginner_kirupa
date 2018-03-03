@@ -82,24 +82,48 @@
 
       //Closures - stopwatch
 
-      
-      function stopwatch(){
-        var timerStart = Date.now();
+
+      // function stopwatch(){
+      //   var timerStart = Date.now();
         
-        function getTimeElapsed(){
-          return (Date.now() - timerStart);
-        }
+      //   function getTimeElapsed(){
+      //     return (Date.now() - timerStart);
+      //   }
         
-        return getTimeElapsed;
-      }
+      //   return getTimeElapsed;
+      // }
 
-      var measureTime = stopwatch();
+      // var measureTime = stopwatch();
 
-      for (i=0; i<100000; i++){
-        var foo = Math.random *1000;
-      }
+      // for (i=0; i<100000; i++){
+      //   var foo = Math.random *1000;
+      // }
 
-      console.log('Time taken = ' + measureTime())
+      // console.log('Time taken = ' + measureTime())
+
+      // Scoping - JsFiddle
+
+      // console.clear()
+
+      // var foo = "Foo in global scope"
+
+      // function something(){
+      //   var foo = "Foo in something"
+      //   console.log("Entering function - " + foo)
+        
+      //   var random = (Math.random() * 1000)
+      //   console.log("Random number = " + random)
+      //   if (random > 500){
+      //     foo = "Foo changed"
+      //   }
+        
+      //   console.log("In function, after random call - " + foo)
+
+      // }
+
+      // something()
+
+      // console.log("After function call - " + foo)
 
 
 
