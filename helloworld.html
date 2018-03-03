@@ -69,16 +69,37 @@
 
       intervalID = setInterval(drawSomething, 1000/60);*/
 
-      var requestID;
+      // var requestID;
 
-      function animationLoop(){
-        //do some animation
-        document.querySelector("p").textContent += "#\n";
+      // function animationLoop(){
+      //   //do some animation
+      //   document.querySelector("p").textContent += "#\n";
 
-        requestID = requestAnimationFrame(animationLoop);
+      //   requestID = requestAnimationFrame(animationLoop);
+      // }
+
+      // animationLoop();
+
+      //Closures - stopwatch
+
+      
+      function stopwatch(){
+        var timerStart = Date.now();
+        
+        function getTimeElapsed(){
+          return (Date.now() - timerStart);
+        }
+        
+        return getTimeElapsed;
       }
 
-      animationLoop();
+      var measureTime = stopwatch();
+
+      for (i=0; i<100000; i++){
+        var foo = Math.random *1000;
+      }
+
+      console.log('Time taken = ' + measureTime())
 
 
 
