@@ -102,6 +102,7 @@
       // console.log('Time taken = ' + measureTime())
 
       // Scoping - JsFiddle
+      // Lesson learned: always use var keyword wherever you declare variables. Not declaring var causes weird bubbling up of scoping, and I'm not sure how it all exactly works. For example, in the code below, depending on whether or not the if statement is true, foo gets changed, and foo in outer scope is also affected (but not the one in global scope!! Confusing!). It's best to declare vars and lets ('let' lets (hehe) you create variables that have block scoping, for example scope just inside the if block)
 
       // console.clear()
 
