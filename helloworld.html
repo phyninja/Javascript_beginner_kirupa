@@ -277,13 +277,53 @@
        console.log(goodAndBad)
        
        */
-       
+
 
       //////////////////////////////////////////////////////////////////////////////////////////////
 
 
 
 
+      /*
+      //Objects in depth
+
+      var funnyGuy = {}
+
+      //Every new object created like above has a prototype object attached to it. funnyGuy inherits the parent __proto__'s properties. You can see what properties __proto__ has by console.log-ing it
+
+      console.log(funnyGuy.__proto__)
+
+      //Further, the __proto__ object is kind of like the ultimate parent. You cannot go any further than this. It's as basic a type as you can get. So, if you try to access the __proto__ of __proto__, you get null
+
+      console.log(funnyGuy.__proto__.__proto__)
+
+      //Three ways to specify properties
+
+          //Literal notation - extend the initializer syntax
+
+          var funnyGuy = {
+            firstName: "Conan",
+            lastName: "O'Brien",
+            getName: function() {
+              return "Name is: " + this.firstName + " " + this.lastName;
+            }
+          }
+
+          //Dot notation - useful when specifying properties whose values are given as part of arguments/expressions
+
+          funnyGuy.firstName = "Conan"
+          funnyGuy.lastName = "O'Brien"
+          funnyGuy.getName = function() { return "Name is: " + this.firstName + " " + this.lastName;}
+
+          //Square bracket notation - useful when the names of properties are given as part of arguments/expressions also
+
+          funnyGuy["firstName"] = "Conan"
+          funnyGuy["lastName"] = "O'Brien"
+          funnyGuy["getName"] = function() { return "Name is: " + this.firstName + " " + this.lastName;}
+
+      console.log(funnyGuy.getName())
+      console.log(funnyGuy["getName"]())
+      */
 
 
     </script>
